@@ -5,7 +5,12 @@ function quizGame() {
     //  - If true, alert "Correct!"
     //  - Else, alert "Wrong!"
     //  - Note: here's an example of what using an alert looks like: alert("Correct!")
-
+if (answer1 === "paris"){
+  alert("Correct!");
+}
+  else{
+    alert("Wrong!");
+  }
 
     
    
@@ -15,7 +20,17 @@ function quizGame() {
     //  - If true, alert "Correct!"
     //  - Else if answer2 is less than 6, alert "Too low! Insects have 6 legs."
     //  - Else, alert "Too high! Insects have 6 legs."
-   
+   if (answer2 === 6){
+     alert("Correct!");
+   }
+  else{
+    if(answer2 < 6){
+      alert("Too low. insects have 6 legs");
+    }
+    else if (answer2 > 6){
+      alert("Too high! Insects have 6 legs.");
+    }
+  }
 
 
 
@@ -25,4 +40,4 @@ function quizGame() {
 
 
 // 3. Once you've completed the conditionals, uncomment the line below and run your code.
-// quizGame();
+quizGame();
